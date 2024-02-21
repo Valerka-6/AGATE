@@ -1,0 +1,36 @@
+.nav {
+    a {
+        text-decoration: $not-decoration;
+        color: $secondary-text-color;
+        font-size: 1rem;
+        &:not(:last-child)::after {
+            display: inline-block;
+            margin: 0 25px;
+            content: "";
+            width: 1.5px;
+            height: 16px;
+            background: #D8D5D5;
+            vertical-align: middle;
+        }
+        &:hover {
+            font-size: 1.5rem;
+            transition: font-size .5s ease-in;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 15px;
+        a:not(:last-child)::after {
+            display: block;
+            margin: 10px auto;
+            content: "";
+            width: 16px;
+            height: 1.5px;
+        }
+    }
+}

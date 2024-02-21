@@ -1,0 +1,45 @@
+.menu-list {
+    margin-top: 35px;
+    &__name {
+        font-size: 1.2rem;
+        font-weight: $normal-font-weight;
+    }
+    &__text-description {
+        color: #474747;
+        margin: 15px 0;
+    }
+    &__text-price {
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-list {
+        margin-top: 15px;
+        &__name {
+            font-size: 1rem;
+        }
+        &__text-description {
+            margin-top: 17px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        max-width: 348px;
+        margin-left: 24px;
+        &__name {
+            font-size: 1rem;
+        }
+        &__text-description {
+            margin: 20px 0;
+        }
+        &__text-price {
+            margin-bottom: 16px;
+        }
+    }
+}

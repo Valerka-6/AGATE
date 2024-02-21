@@ -1,0 +1,33 @@
+.contacts {
+    margin: 60px auto;
+    max-width: 638px;
+    width: 100%;
+    list-style-type: $not-decoration;
+    &__item {
+        font-size: 1.4rem;
+    }
+    a {
+        text-decoration: $not-decoration;
+        color: $secondary-text-color;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contacts {
+        margin: 50px auto;
+        max-width: 456px;
+        &__item {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts {
+        margin: 40px auto;
+        max-width: 401px;
+        &__item {
+            font-size: .88rem;
+        }
+    }
+}

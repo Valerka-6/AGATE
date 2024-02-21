@@ -1,0 +1,39 @@
+.footer {
+    padding: $section-indent;
+    background: #262626;
+    color: $secondary-text-color;
+    &__name {
+        font-size: 2.6rem;
+    }
+    &__schedule {
+        font-size: 1rem;
+        color: #B1B1B1;
+    }
+    & .up-arrow {
+        color: $secondary-text-color;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        padding: 80px 0;
+        &__name {
+            font-size: 2rem;
+        }
+        &__schedule {
+            font-size: .8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 70px 0;
+        &__name {
+            font-size: 1.6rem;
+        }
+        &__schedule {
+            font-size: .72rem;
+        }
+    }
+}

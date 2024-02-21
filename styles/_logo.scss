@@ -1,0 +1,14 @@
+.logo {
+    text-decoration: $not-decoration;
+    color: $secondary-text-color;
+    font-size: 2rem;
+    &:hover {
+        color: #FFA60D;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        font-size: 1.4rem;
+    }
+}

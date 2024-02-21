@@ -1,0 +1,50 @@
+.gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+    &__image {
+        width: calc((100%)/2);
+        height: 595px;
+        padding: 12px;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-repeat: no-repeat;
+            background: lightgray 50%;
+            /*в фигме было такое свойство, не знаю правильно ли добавила и нужно ли вообще добовлять*/
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .gallery-wrapper {
+        padding: 12px 0;
+        &__image {
+            height: 448px;
+            padding: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .gallery-wrapper {
+        padding: 15x;
+        &__image {
+            height: 316px;
+            padding: 10px;
+            /* какая то проблема у меня с правильным подсчетом отступов*/
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-wrapper {
+        padding: 0 12px;
+        &__image {
+            height: 227px;
+            padding: 12px;
+        }
+    }
+}

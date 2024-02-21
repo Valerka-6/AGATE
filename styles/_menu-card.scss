@@ -1,0 +1,111 @@
+.menu-card {
+    @include menu-card-type;
+    &:not(:last-of-type) {
+        margin-right: 48px;
+    }
+    &__image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    &--red::before {
+        @include article-menu-card-before(#D33B3B, "HOT!");
+    }
+    &--green::before {
+        @include article-menu-card-before(#B3E151, "NEW!");
+    }
+    &--orange::before {
+        @include article-menu-card-before(#E5A434, "HIT!");
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .menu-card {
+        max-width: 310px;
+        width: calc((100% - 2 * 30px) / 3);
+        &:not(:last-of-type) {
+            margin-right: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-card {
+        @include menu-card-type-1024;
+        &:not(:last-of-type) {
+            margin-right: 92px;
+        }
+        &__image {
+            max-width: 252px;
+        }
+        &--red::before {
+            @include article-menu-card-before-1024;
+        }
+        &--green::before {
+            @include article-menu-card-before-1024;
+        }
+        &--orange::before {
+            @include article-menu-card-before-1024;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .menu-card {
+        max-width: 220px;
+        width: calc((100% - 2 * 42px) / 3);
+        &:not(:last-of-type) {
+            margin-right: 42px;
+        }
+        &--red::before {
+            @include article-menu-card-before-1000;
+        }
+        &--green::before {
+            @include article-menu-card-before-1000;
+        }
+        &--orange::before {
+            @include article-menu-card-before-1000;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menu-card {
+        max-width: 200px;
+        width: calc((100% - 2 * 32px) / 3);
+        &:not(:last-of-type) {
+            margin-right: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-card {
+        @include menu-card-type-768;
+        &:not(:last-of-type) {
+            margin-right: 0;
+            margin-bottom: 58px;
+        }
+        &--red::before {
+            @include article-menu-card-before-768;
+        }
+        &--green::before {
+            @include article-menu-card-before-768;
+        }
+        &--orange::before {
+            @include article-menu-card-before-768;
+        }
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .menu-card {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &:not(:last-of-type) {
+            margin-bottom: 48px;
+        }
+    }
+}

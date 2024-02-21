@@ -1,0 +1,16 @@
+.socials {
+    width: 100%;
+    font-size: 2rem;
+    margin: 60px auto 0;
+    &__item {
+        & i {
+            color: $secondary-text-color;
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+}

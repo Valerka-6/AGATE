@@ -1,0 +1,25 @@
+.button {
+    &:hover {
+        background: #FFA60D;
+        border-color: #FFA60D;
+    }
+    &--white {
+        @include button-styles($secondary-text-color, $secondary-text-color);
+        &:active {
+            border-color: #000000;
+            color: #000000;
+            background: transparent;
+        }
+    }
+    &--black {
+        @include button-styles(#000, #000);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .button {
+        max-width: 248px;
+        padding: 14px 57px 13px 50px;
+        font-size: .68rem;
+    }
+}

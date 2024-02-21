@@ -1,0 +1,9 @@
+.wrapper {
+    background: url(../img/baner.png);
+    color: $secondary-text-color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    a {
+        text-decoration: $not-decoration;
+    }
+}
